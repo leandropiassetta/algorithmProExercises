@@ -128,7 +128,6 @@ This section includes exercises that challenge your problem-solving skills and p
 8. Create a program that implements a dimensionality reduction algorithm, such as PCA.
 9. Create a program that implements a community detection algorithm in a graph.
 10. Create a program to solve the Sudoku problem using backtracking.
-
 11. Implement a machine learning algorithm, such as Linear Regression or K-means Clustering.
 12. Implement an algorithm to find the minimum cut in a graph using the Karger algorithm.
 13. Implement the Bellman-Ford algorithm to find the shortest path in a weighted graph.
@@ -139,7 +138,6 @@ This section includes exercises that challenge your problem-solving skills and p
 18. Implement an algorithm to solve the Traveling Salesman Problem.
 19. Write a program that implements the Prim's algorithm to find the minimum spanning tree.
 20. Write a program that implements the Red-Black Binary Search Tree.
-
 21. Create a program that implements the Kruskal's algorithm to find the minimum spanning tree.
 22. Create a program that implements the Johnson's algorithm to find shortest paths between all pairs of vertices in a weighted directed graph.
 23. Write a program that implements the Strassen's algorithm for matrix multiplication.
@@ -150,7 +148,6 @@ This section includes exercises that challenge your problem-solving skills and p
 28. Create a program that implements the Trie tree search algorithm.
 29. Write a program that implements the Shell sorting algorithm.
 30. Write a program that implements the Cube sorting algorithm.
-
 31. Write a program that implements the Cocktail sorting algorithm.
 32. Write a program that implements the Gnome sorting algorithm.
 33. Write a program that implements the Comb sorting algorithm.
