@@ -63,6 +63,8 @@ This section contains exercises suitable for beginners who are looking to build 
 
 This section features exercises that delve deeper into programming concepts, suitable for those with some coding experience.
 
+## Exercise List
+
 1. Create a linked list.
 2. Implement a stack or queue.
 3. Create a program to read and write to a file.
@@ -117,6 +119,8 @@ Feel free to explore these exercises at the intermediate level to further develo
 ## Advanced Level
 
 This section includes exercises that challenge your problem-solving skills and programming expertise.
+
+## Exercise List
 
 1. Create a program that implements a decision tree algorithm.
 2. Create a program that implements the topological sorting algorithm.
