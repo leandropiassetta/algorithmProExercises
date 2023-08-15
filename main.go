@@ -9,6 +9,7 @@ import (
 	"github.com/leandropiassetta/algorithmProExercises/basic/ex4"
 	"github.com/leandropiassetta/algorithmProExercises/basic/ex5"
 	"github.com/leandropiassetta/algorithmProExercises/basic/ex6"
+	"github.com/leandropiassetta/algorithmProExercises/basic/ex7"
 )
 
 func main() {
@@ -31,4 +32,7 @@ func main() {
 
 	fmt.Println("exercise 6: Convert Celsius to Fahrenheit.")
 	ex6.RunExercise6()
+
+	fmt.Println("exercise 7: Find the larger of two numbers.")
+	ex7.RunExercise7()
 }
