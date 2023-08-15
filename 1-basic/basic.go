@@ -107,25 +107,46 @@ func runExercise7() {
 	}
 }
 
+func runExercise8() {
+	var number int
+
+	fmt.Print("Enter the 1º number: ")
+	fmt.Scan(&number)
+	smallNumber := number
+
+	for i := 2; i <= 3; i++ {
+		fmt.Printf("Enter the %dº number: ", i)
+		fmt.Scan(&number)
+
+		if number < smallNumber {
+			smallNumber = number
+		}
+	}
+	fmt.Printf("The smallest number is: %d\n", smallNumber)
+}
+
 func RunExercisesBasics() {
-	// fmt.Println("exercise 1: Print " + "Hello, World!" + "to the console")
-	// runExercise1()
+	fmt.Println("exercise 1: Print " + "Hello, World!" + "to the console")
+	runExercise1()
 
-	// fmt.Println("exercise 2: Calculate the sum of two numbers.")
-	// runExercise2()
+	fmt.Println("exercise 2: Calculate the sum of two numbers.")
+	runExercise2()
 
-	// fmt.Println("exercise 3: Calculate the average of three numbers.")
-	// runExercise3()
+	fmt.Println("exercise 3: Calculate the average of three numbers.")
+	runExercise3()
 
-	// fmt.Println("exercise 4: Check if a number is even or odd.")
-	// runExercise4()
+	fmt.Println("exercise 4: Check if a number is even or odd.")
+	runExercise4()
 
-	// fmt.Println("exercise 5: Check if a number is positive, negative, or zero.")
-	// runExercise5()
+	fmt.Println("exercise 5: Check if a number is positive, negative, or zero.")
+	runExercise5()
 
-	// fmt.Println("exercise 6: Convert Celsius to Fahrenheit.")
-	// runExercise6()
+	fmt.Println("exercise 6: Convert Celsius to Fahrenheit.")
+	runExercise6()
 
 	fmt.Println("exercise 7: Find the larger of two numbers.")
 	runExercise7()
+
+	fmt.Println("exercise 8: Find the smaller of three numbers.")
+	runExercise8()
 }
