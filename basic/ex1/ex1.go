@@ -1,8 +1,7 @@
-package main
+package ex1
 
 import "fmt"
 
-// exercise 1: Print "Hello, World!" to the console
-func main() {
+func RunExercise1() {
 	fmt.Println("Hello, World!")
 }

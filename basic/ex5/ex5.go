@@ -1,10 +1,8 @@
-package main
+package ex5
 
 import "fmt"
 
-// exercise 5: Check if a number is positive, negative, or zero.
-
-func main() {
+func RunExercise5() {
 	var number float64
 
 	fmt.Print("Digit a number: ")

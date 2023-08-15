@@ -1,10 +1,8 @@
-package main
+package ex3
 
 import "fmt"
 
-// exercise 3: Calculate the average of three numbers.
-
-func main() {
+func RunExercise3() {
 	var numberA int
 	var numberB int
 	var numberC int

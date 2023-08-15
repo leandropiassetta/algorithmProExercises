@@ -1,8 +1,6 @@
-package main
+package ex6
 
 import "fmt"
-
-// exercise 6: Convert Celsius to Fahrenheit.
 
 func convertTemperature(celsius float64) float64 {
 	fahrenheit := (celsius * 1.8) + 32
@@ -10,7 +8,7 @@ func convertTemperature(celsius float64) float64 {
 	return fahrenheit
 }
 
-func main() {
+func RunExercise6() {
 	var celsiusTemperature float64
 
 	fmt.Print("Enter the current celsius temperature of your city? ")

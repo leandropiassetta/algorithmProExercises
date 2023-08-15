@@ -1,12 +1,10 @@
-package main
+package ex2
 
 import (
 	"fmt"
 )
 
-// exercise 2: Calculate the sum of two numbers.
-
-func main() {
+func RunExercise2() {
 	var numberA int
 	var numberB int
 

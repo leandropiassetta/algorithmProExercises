@@ -1,10 +1,8 @@
-package main
+package ex4
 
 import "fmt"
 
-// exercise 4: Check if a number is even or odd.
-
-func main() {
+func RunExercise4() {
 	var number int
 
 	fmt.Print("Digit a number: ")
