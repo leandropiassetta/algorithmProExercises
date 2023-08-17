@@ -129,6 +129,30 @@ func runExercise8() {
 	fmt.Printf("The smallest number is: %d\n", smallNumber)
 }
 
+func checkObtuse(a, b, c float64) bool {
+	angleA := calculateAngle(a, b, c)
+	angleB := calculateAngle(b, a, c)
+	angleC := calculateAngle(c, a, b)
+
+	anglesGreater90 := 0
+	if angleA > 90 {
+		anglesGreater90++
+	}
+	if angleB > 90 {
+		anglesGreater90++
+	}
+	if angleC > 90 {
+		anglesGreater90++
+	}
+
+	return anglesGreater90 == 1
+}
+
+func calculateAngle(a, b, c float64) float64 {
+	cosA := (b*b + c*c - a*a) / (2 * b * c)
+	return math.Acos(cosA) * 180 / math.Pi
+}
+
 func runExercise9() {
 	var sideLengthA float64
 	var sideLengthB float64
@@ -158,125 +182,206 @@ f - Obtuse triangle
 	fmt.Println(options)
 	fmt.Scan(&option)
 
-	// equilateral triangle has all sides equal
-	verifySidesEquilateralTriangleIsValid := sideLengthA == sideLengthB && sideLengthB == sideLengthC
-	equilateralTriangle := option == strings.ToLower("a") && verifySidesEquilateralTriangleIsValid
+	isTriangleValid := sideLengthA+sideLengthB > sideLengthC && sideLengthA+sideLengthC > sideLengthB && sideLengthB+sideLengthC > sideLengthA
 
-	if !verifySidesEquilateralTriangleIsValid && option == strings.ToLower("a") {
+	if !isTriangleValid {
+		fmt.Println("the chosen sides do not form a triangle, please choose other sides")
+	}
+
+	// equilateral triangle has all sides equal
+	equilateralTriangleIsValid := sideLengthA == sideLengthB && sideLengthB == sideLengthC
+	equilateralTriangle := option == strings.ToLower("a") && equilateralTriangleIsValid
+
+	if !equilateralTriangle {
 		fmt.Println("this triangle is not equilateral because all sides are not equal, please choose side lengths that are equal or choose another option")
 	}
 
 	// scalene triangle has all sides different
-	scaleneTriangle := option == strings.ToLower("b") && sideLengthA != sideLengthB && sideLengthB != sideLengthC && sideLengthA != sideLengthC
+	scaleneTriangleIsValid := sideLengthA != sideLengthB && sideLengthB != sideLengthC && sideLengthA != sideLengthC
+	scaleneTriangle := option == strings.ToLower("b") && scaleneTriangleIsValid
 
-	// isosceles triangle has two sides equal
-	isoscelesTriangle := option == strings.ToLower("c") && sideLengthA == sideLengthB && sideLengthB != sideLengthC && sideLengthA != sideLengthC || sideLengthA == sideLengthC && sideLengthC != sideLengthB && sideLengthA != sideLengthB || sideLengthB == sideLengthC && sideLengthC != sideLengthA && sideLengthB != sideLengthA
+	if !scaleneTriangle {
+		fmt.Println("this triangle is not scalene because all sides are not different, please choose side lengths that are different or choose another option")
+	}
 
-	// right triangle has one angle equal to 90 degrees
-	rightTriangle := option == strings.ToLower("d") && math.Pow(sideLengthC, 2) == math.Pow(sideLengthA, 2)+math.Pow(sideLengthB, 2) || math.Pow(sideLengthA, 2) == math.Pow(sideLengthC, 2)+math.Pow(sideLengthB, 2) || math.Pow(sideLengthB, 2) == math.Pow(sideLengthA, 2)+math.Pow(sideLengthC, 2)
+	// isosceles triangle has two sides equal and one different side  (the different side is the base) and two equal angles (the angles opposite the equal sides) and the sum of the squares of the lengths of the legs is equal to the square of the length of the hypotenuse (Pythagorean theorem)
 
-	// acute triangle has all angles less than 90 degrees
-	acuteTriangle := option == strings.ToLower("e")
+	isoscelesTriangleValid := sideLengthA == sideLengthB && sideLengthB != sideLengthC && sideLengthA != sideLengthC || sideLengthA == sideLengthC && sideLengthC != sideLengthB && sideLengthA != sideLengthB || sideLengthB == sideLengthC && sideLengthC != sideLengthA && sideLengthB != sideLengthA
+	isoscelesTriangle := option == strings.ToLower("c") && isoscelesTriangleValid
 
-	// obtuse triangle has one angle greater than 90 degrees
-	obtuseTriangle := option == strings.ToLower("f")
+	if !isoscelesTriangle {
+		fmt.Println("this triangle is not isosceles because two sides are not equal and one different side, please choose side that fulfill this condition or choose another option")
+	}
 
-	switch {
+	// right triangle has one angle equal to 90 degrees and the sum of the squares of the lengths of the legs is equal to the square of the length of the hypotenuse (Pythagorean theorem)
 
-	case equilateralTriangle:
+	rightTriangleIsValid := math.Pow(sideLengthC, 2) == math.Pow(sideLengthA, 2)+math.Pow(sideLengthB, 2) || math.Pow(sideLengthA, 2) == math.Pow(sideLengthC, 2)+math.Pow(sideLengthB, 2) || math.Pow(sideLengthB, 2) == math.Pow(sideLengthA, 2)+math.Pow(sideLengthC, 2)
+	rightTriangle := option == strings.ToLower("d") && rightTriangleIsValid
 
-		height = (math.Sqrt(3) / 2) * sideLengthA
-		base = sideLengthC
-		area := (base * height) / 2
+	if !rightTriangle {
+		fmt.Println("this triangle is not right because one side is not equal that sum of the squares of the lengths of the legs, please choose side that fulfill this condition or choose another option")
 
-		fmt.Printf("the area of equilateral triangle is: %.2f", area)
+		// acute triangle has all angles less than 90 degrees and the sum of the squares of the lengths of the legs is greater than the square of the length of the hypotenuse (Pythagorean theorem)
 
-	case scaleneTriangle:
-		perimeter := sideLengthA + sideLengthB + sideLengthC
-		semiPerimeter := perimeter / 2
+		acuteTriangleIsValid := math.Pow(sideLengthC, 2) < math.Pow(sideLengthA, 2)+math.Pow(sideLengthB, 2) || math.Pow(sideLengthA, 2) < math.Pow(sideLengthC, 2)+math.Pow(sideLengthB, 2) || math.Pow(sideLengthB, 2) < math.Pow(sideLengthA, 2)+math.Pow(sideLengthC, 2)
+		acuteTriangle := (option == "e") && acuteTriangleIsValid
 
-		area := math.Sqrt(semiPerimeter * (semiPerimeter - sideLengthA) * (semiPerimeter - sideLengthB) * (semiPerimeter - sideLengthC))
-
-		fmt.Printf("the area of scalene triangle is: %.2f", area)
-
-	case isoscelesTriangle:
-
-		if sideLengthC == sideLengthB {
-			base = sideLengthA
-			// theorem of pythagoras
-			height := math.Sqrt((sideLengthC * sideLengthC) - (base / 2 * base / 2))
-
-			area := (base * height) / 2
-
-			fmt.Printf("the area of isosceles triangle is: %.2f", area)
-		} else if sideLengthA == sideLengthC {
-			base = sideLengthB
-			// theorem of pythagoras
-			height := math.Sqrt((sideLengthA * sideLengthA) - (base / 2 * base / 2))
-
-			area := (base * height) / 2
-
-			fmt.Printf("the area of isosceles triangle is: %.2f", area)
-		} else {
-			base = sideLengthC
-			// theorem of pythagoras
-			height := math.Sqrt((sideLengthA * sideLengthA) - (base / 2 * base / 2))
-
-			area := (base * height) / 2
-
-			fmt.Printf("the area of isosceles triangle is: %.2f", area)
+		if !acuteTriangle {
+			fmt.Println("this triangle is not acute because one side is not less than the sum of the squares of the lengths of the legs, please choose side that fulfill this condition or choose another option")
 		}
 
-	case rightTriangle:
-		if sideLengthA < sideLengthB && sideLengthA < sideLengthC {
-			base = sideLengthA
-			if sideLengthB < sideLengthC {
-				height = sideLengthB
-				area := (base * height) / 2
+		// obtuse triangle has one angle greater than 90 degrees and the sum of the squares of the lengths of the legs is less than the square of the length of the hypotenuse (Pythagorean theorem)
 
-				fmt.Printf("the area of right triangle is: %.2f", area)
-			} else {
-				height = sideLengthC
-				area := (base * height) / 2
+		obtuseTriangle := option == strings.ToLower("f") && checkObtuse(sideLengthA, sideLengthB, sideLengthC)
 
-				fmt.Printf("the area of right triangle is: %.2f", area)
-			}
-		} else if sideLengthB < sideLengthA && sideLengthB < sideLengthC {
-			base = sideLengthB
-			if sideLengthA < sideLengthC {
-				height = sideLengthA
-				area := (base * height) / 2
-
-				fmt.Printf("the area of right triangle is: %.2f", area)
-			} else {
-				height = sideLengthC
-				area := (base * height) / 2
-
-				fmt.Printf("the area of right triangle is: %.2f", area)
-			}
-		} else {
-			base = sideLengthC
-			if sideLengthA < sideLengthB {
-				height = sideLengthA
-				area := (base * height) / 2
-
-				fmt.Printf("the area of right triangle is: %.2f", area)
-			} else {
-				height = sideLengthB
-				area := (base * height) / 2
-
-				fmt.Printf("the area of right triangle is: %.2f", area)
-			}
+		if !obtuseTriangle {
+			fmt.Println("this triangle is not obtuse because one angle is not greater than 90 degrees, please choose side that fulfill this condition or choose another option")
 		}
 
-	case acuteTriangle:
-		fmt.Printf("the area of acute triangle is: %.2f", area)
+		switch {
 
-	case obtuseTriangle:
-		fmt.Printf("the area of obtuse triangle is: %.2f", area)
+		case equilateralTriangle:
 
-	default:
-		fmt.Println("this option not is valid")
+			height = (math.Sqrt(3) / 2) * sideLengthA
+			base = sideLengthC
+			area := (base * height) / 2
+
+			fmt.Printf("the area of equilateral triangle is: %.2f", area)
+
+		case scaleneTriangle:
+			perimeter := sideLengthA + sideLengthB + sideLengthC
+			semiPerimeter := perimeter / 2
+
+			area := math.Sqrt(semiPerimeter * (semiPerimeter - sideLengthA) * (semiPerimeter - sideLengthB) * (semiPerimeter - sideLengthC))
+
+			fmt.Printf("the area of scalene triangle is: %.2f", area)
+
+		case isoscelesTriangle:
+
+			if sideLengthC == sideLengthB {
+				base = sideLengthA
+				// theorem of pythagoras
+				height := math.Sqrt((sideLengthC * sideLengthC) - (base / 2 * base / 2))
+
+				area := (base * height) / 2
+
+				fmt.Printf("the area of isosceles triangle is: %.2f", area)
+			} else if sideLengthA == sideLengthC {
+				base = sideLengthB
+				// theorem of pythagoras
+				height := math.Sqrt((sideLengthA * sideLengthA) - (base / 2 * base / 2))
+
+				area := (base * height) / 2
+
+				fmt.Printf("the area of isosceles triangle is: %.2f", area)
+			} else {
+				base = sideLengthC
+				// theorem of pythagoras
+				height := math.Sqrt((sideLengthA * sideLengthA) - (base / 2 * base / 2))
+
+				area := (base * height) / 2
+
+				fmt.Printf("the area of isosceles triangle is: %.2f", area)
+			}
+
+		case rightTriangle:
+			if sideLengthA < sideLengthB && sideLengthA < sideLengthC {
+				base = sideLengthA
+				if sideLengthB < sideLengthC {
+					height = sideLengthB
+					area := (base * height) / 2
+
+					fmt.Printf("the area of right triangle is: %.2f", area)
+				} else {
+					height = sideLengthC
+					area := (base * height) / 2
+
+					fmt.Printf("the area of right triangle is: %.2f", area)
+				}
+			} else if sideLengthB < sideLengthA && sideLengthB < sideLengthC {
+				base = sideLengthB
+				if sideLengthA < sideLengthC {
+					height = sideLengthA
+					area := (base * height) / 2
+
+					fmt.Printf("the area of right triangle is: %.2f", area)
+				} else {
+					height = sideLengthC
+					area := (base * height) / 2
+
+					fmt.Printf("the area of right triangle is: %.2f", area)
+				}
+			} else {
+				base = sideLengthC
+				if sideLengthA < sideLengthB {
+					height = sideLengthA
+					area := (base * height) / 2
+
+					fmt.Printf("the area of right triangle is: %.2f", area)
+				} else {
+					height = sideLengthB
+					area := (base * height) / 2
+
+					fmt.Printf("the area of right triangle is: %.2f", area)
+				}
+			}
+
+		case acuteTriangle:
+			if sideLengthA < sideLengthB && sideLengthA < sideLengthC {
+				base = sideLengthA
+				height = math.Sqrt((sideLengthC * sideLengthC) - (base / 2 * base / 2))
+				area := (base * height) / 2
+
+				fmt.Printf("the area of acute triangle is: %.2f", area)
+			} else if sideLengthB < sideLengthA && sideLengthB < sideLengthC {
+				base = sideLengthB
+				height = math.Sqrt((sideLengthA * sideLengthA) - (base / 2 * base / 2))
+				area := (base * height) / 2
+
+				fmt.Printf("the area of acute triangle is: %.2f", area)
+			} else {
+				base = sideLengthC
+				height = math.Sqrt((sideLengthA * sideLengthA) - (base / 2 * base / 2))
+				area := (base * height) / 2
+
+				fmt.Printf("the area of acute triangle is: %.2f", area)
+			}
+
+		case obtuseTriangle:
+
+			maxAngle := math.Max(calculateAngle(sideLengthA, sideLengthB, sideLengthC), math.Max(calculateAngle(sideLengthA, sideLengthB, sideLengthC), calculateAngle(sideLengthA, sideLengthB, sideLengthC)))
+
+			var baseSide, heightSide float64
+
+			if maxAngle == calculateAngle(sideLengthA, sideLengthB, sideLengthC) {
+				baseSide = sideLengthA
+				heightSide = sideLengthB
+				height = heightSide * math.Sin(maxAngle*math.Pi/180)
+
+				area := (baseSide * height) / 2
+
+				fmt.Printf("the area of obtuse triangle is: %.2f", area)
+			} else if maxAngle == calculateAngle(sideLengthA, sideLengthB, sideLengthC) {
+				baseSide = sideLengthB
+				heightSide = sideLengthA
+				height = heightSide * math.Sin(maxAngle*math.Pi/180)
+
+				area := (baseSide * height) / 2
+
+				fmt.Printf("the area of obtuse triangle is: %.2f", area)
+			} else {
+				baseSide = sideLengthC
+				heightSide = sideLengthA
+				height = heightSide * math.Sin(maxAngle*math.Pi/180)
+
+				area := (baseSide * height) / 2
+
+				fmt.Printf("the area of obtuse triangle is: %.2f", area)
+			}
+
+		default:
+			fmt.Println("this option not is valid")
+		}
 	}
 }
 
