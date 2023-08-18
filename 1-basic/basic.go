@@ -148,6 +148,11 @@ func checkObtuse(a, b, c float64) bool {
 	return anglesGreater90 == 1
 }
 
+func calculateTriangleArea(a, b, c float64) float64 {
+	s := (a + b + c) / 2
+	return math.Sqrt(s * (s - a) * (s - b) * (s - c))
+}
+
 func calculateAngle(a, b, c float64) float64 {
 	cosA := (b*b + c*c - a*a) / (2 * b * c)
 	return math.Acos(cosA) * 180 / math.Pi
@@ -435,8 +440,8 @@ func RunExercisesBasics() {
 	// fmt.Println("exercise 8: Find the smaller of three numbers.")
 	// runExercise8()
 
-	fmt.Println("exercise 9: Calculate the area of a triangle.")
-	fmt.Println(runExercise9())
+	// fmt.Println("exercise 9: Calculate the area of a triangle.")
+	// fmt.Println(runExercise9())
 
 	// fmt.Println("exercise 10: Swap the values of two variables without using a third variable.")
 	// runExercise10()
