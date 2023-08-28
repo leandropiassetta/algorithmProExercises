@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise11"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise13"
 )
 
 func RunExercisesBasics() {
@@ -68,8 +68,18 @@ func RunExercisesBasics() {
 	// exercise10.RunExercise10()
 	// time.Sleep(1 * time.Second)
 
-	fmt.Println("Calculate the factorial of a non-negative integer.")
+	// fmt.Println("exercise 11: Calculate the factorial of a non-negative integer.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise11.RunExercise11()
+
+	// fmt.Println("exercise 12: Check if a number is a prime.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise12.RunExercise12()
+
+	fmt.Println("exercise 13: Check if a year is a leap year.")
 	time.Sleep(1 * time.Second)
 
-	exercise11.RunExercise11()
+	exercise13.RunExercise13()
 }
