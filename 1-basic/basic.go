@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise13"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise14"
 )
 
 func RunExercisesBasics() {
@@ -78,8 +78,13 @@ func RunExercisesBasics() {
 
 	// exercise12.RunExercise12()
 
-	fmt.Println("exercise 13: Check if a year is a leap year.")
+	// fmt.Println("exercise 13: Check if a year is a leap year.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise13.RunExercise13()
+
+	fmt.Println("exercise 14: Check if a string is empty.")
 	time.Sleep(1 * time.Second)
 
-	exercise13.RunExercise13()
+	exercise14.RunExercise14()
 }

@@ -10,9 +10,9 @@ func RunExercise13() {
 
 	// pass 1: Determine if the number is divisible for 4
 
-	isDivisible := year%4 == 0 && year%100 != 0 || year%100 == 0 && year%400 == 0
+	isLeapYear := year%4 == 0 && year%100 != 0 || year%100 == 0 && year%400 == 0
 
-	if !isDivisible {
+	if !isLeapYear {
 		fmt.Println("not is a leap year")
 		return
 	} else {
