@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise14"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise15"
 )
 
 func RunExercisesBasics() {
@@ -83,8 +83,25 @@ func RunExercisesBasics() {
 
 	// exercise13.RunExercise13()
 
-	fmt.Println("exercise 14: Check if a string is empty.")
+	// fmt.Println("exercise 14: Check if a string is empty.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise14.RunExercise14()
+
+	fmt.Println("exercise 15: Concatenate two strings.")
 	time.Sleep(1 * time.Second)
 
-	exercise14.RunExercise14()
+	exercise15.RunExercise15()
 }
+
+// package exercise15
+
+// import "fmt"
+
+// func RunExercise15() {
+// 	var str string
+
+// 	fmt.Println("")
+// 	fmt.Scanln(&)
+
+// }
