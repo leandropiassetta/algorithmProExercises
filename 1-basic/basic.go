@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise17"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise18"
 )
 
 func RunExercisesBasics() {
@@ -96,10 +96,15 @@ func RunExercisesBasics() {
 
 	// exercise16.RunExercise16()
 
-	fmt.Println("exercise 17:Check if a string is a palindrome.")
+	// fmt.Println("exercise 17:Check if a string is a palindrome.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise17.RunExercise17()
+
+	fmt.Println("exercise 18:Calculate the square of a number.")
 	time.Sleep(1 * time.Second)
 
-	exercise17.RunExercise17()
+	exercise18.RunExercise18()
 }
 
 // package exercise15
