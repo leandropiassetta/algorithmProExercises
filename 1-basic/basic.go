@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise15"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise16"
 )
 
 func RunExercisesBasics() {
@@ -88,10 +88,13 @@ func RunExercisesBasics() {
 
 	// exercise14.RunExercise14()
 
-	fmt.Println("exercise 15: Concatenate two strings.")
+	// fmt.Println("exercise 15: Concatenate two strings.")
+	// time.Sleep(1 * time.Second)
+
+	fmt.Println("exercise 16:Reverse a string.")
 	time.Sleep(1 * time.Second)
 
-	exercise15.RunExercise15()
+	exercise16.RunExercise16()
 }
 
 // package exercise15
