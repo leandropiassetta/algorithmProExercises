@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise18"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise19"
 )
 
 func RunExercisesBasics() {
@@ -101,10 +101,20 @@ func RunExercisesBasics() {
 
 	// exercise17.RunExercise17()
 
-	fmt.Println("exercise 18:Calculate the square of a number.")
+	// fmt.Println("exercise 18:Calculate the square of a number.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise18.RunExercise18()
+
+	fmt.Println("exercise 19:Generate multiplication tables.")
 	time.Sleep(1 * time.Second)
 
-	exercise18.RunExercise18()
+	exercise19.RunExercise19()
+
+	// fmt.Println("exercise 20:Find the roots of a quadratic equation.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise20.RunExercise20()
 }
 
 // package exercise15
