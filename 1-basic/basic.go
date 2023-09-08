@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise21"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise22"
 )
 
 func RunExercisesBasics() {
@@ -116,10 +116,15 @@ func RunExercisesBasics() {
 
 	// exercise20.RunExercise20()
 
-	fmt.Println("exercise 21:	Calculate the sum of natural numbers up to a given value.")
+	// fmt.Println("exercise 21:	Calculate the sum of natural numbers up to a given value.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise21.RunExercise21()
+
+	fmt.Println("exercise 22:	Generate Fibonacci sequence up to a certain term.")
 	time.Sleep(1 * time.Second)
 
-	exercise21.RunExercise21()
+	exercise22.RunExercise22()
 }
 
 // package exercise15
