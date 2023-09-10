@@ -1,4 +1,4 @@
-package exercise23
+package exercise24
 
 import (
 	"bufio"
@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func RunExercise23() {
+func RunExercise24() {
 	var input string
 	var numbers []int
 
@@ -33,13 +33,15 @@ func RunExercise23() {
 		return
 	}
 
-	var sum int
+	maxNumber := numbers[0]
 
-	for _, number := range numbers {
-		sum += number
+	for i := 1; i < len(numbers); i++ {
+		if maxNumber > numbers[i] {
+			continue
+		} else {
+			maxNumber = numbers[i]
+		}
 	}
 
-	average := sum / len(numbers)
-
-	fmt.Printf("The average of the numbers entered is: %d", average)
+	fmt.Printf("The maximium number is: %v\n", maxNumber)
 }

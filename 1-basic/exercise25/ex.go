@@ -1,4 +1,4 @@
-package exercise23
+package exercise25
 
 import (
 	"bufio"
@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func RunExercise23() {
+func RunExercise25() {
 	var input string
 	var numbers []int
 
@@ -33,13 +33,15 @@ func RunExercise23() {
 		return
 	}
 
-	var sum int
+	minNumber := numbers[0]
 
-	for _, number := range numbers {
-		sum += number
+	for i := 1; i < len(numbers); i++ {
+		if minNumber < numbers[i] {
+			continue
+		} else {
+			minNumber = numbers[i]
+		}
 	}
 
-	average := sum / len(numbers)
-
-	fmt.Printf("The average of the numbers entered is: %d", average)
+	fmt.Printf("The minimium number is: %v\n", minNumber)
 }

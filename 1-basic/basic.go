@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise22"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise25"
 )
 
 func RunExercisesBasics() {
@@ -121,10 +121,25 @@ func RunExercisesBasics() {
 
 	// exercise21.RunExercise21()
 
-	fmt.Println("exercise 22:	Generate Fibonacci sequence up to a certain term.")
+	// fmt.Println("exercise 22: Generate Fibonacci sequence up to a certain term.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise22.RunExercise22()
+
+	// fmt.Println("exercise 23:	Calculate the average of an array of numbers.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise23.RunExercise23()
+
+	// fmt.Println("exercise 24:	Find the maximum number in an array.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise24.RunExercise24()
+
+	fmt.Println("exercise 25:	Find the minimum number in an array.")
 	time.Sleep(1 * time.Second)
 
-	exercise22.RunExercise22()
+	exercise25.RunExercise25()
 }
 
 // package exercise15
