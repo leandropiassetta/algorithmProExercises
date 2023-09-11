@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise25"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise26"
 )
 
 func RunExercisesBasics() {
@@ -136,10 +136,15 @@ func RunExercisesBasics() {
 
 	// exercise24.RunExercise24()
 
-	fmt.Println("exercise 25:	Find the minimum number in an array.")
+	// fmt.Println("exercise 25:	Find the minimum number in an array.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise25.RunExercise25()
+
+	fmt.Println("exercise 26:	Calculate the sum of elements in an array.")
 	time.Sleep(1 * time.Second)
 
-	exercise25.RunExercise25()
+	exercise26.RunExercise26()
 }
 
 // package exercise15
