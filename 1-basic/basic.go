@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise28"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise29"
 )
 
 func RunExercisesBasics() {
@@ -151,10 +151,15 @@ func RunExercisesBasics() {
 
 	// exercise27.RunExercise27()
 
-	fmt.Println("exercise 28:	Count the occurrences of an element in an array.")
+	// fmt.Println("exercise 28:	Count the occurrences of an element in an array.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise28.RunExercise28()
+
+	fmt.Println("exercise 29:	Find the index of an element in an array.")
 	time.Sleep(1 * time.Second)
 
-	exercise28.RunExercise28()
+	exercise29.RunExercise29()
 }
 
 // package exercise15
