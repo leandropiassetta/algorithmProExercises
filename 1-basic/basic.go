@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise29"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise30"
 )
 
 func RunExercisesBasics() {
@@ -156,10 +156,15 @@ func RunExercisesBasics() {
 
 	// exercise28.RunExercise28()
 
-	fmt.Println("exercise 29:	Find the index of an element in an array.")
+	// fmt.Println("exercise 29:	Find the index of an element in an array.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise29.RunExercise29()
+
+	fmt.Println("exercise 30:		Remove duplicates from an array.")
 	time.Sleep(1 * time.Second)
 
-	exercise29.RunExercise29()
+	exercise30.RunExercise30()
 }
 
 // package exercise15
