@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise26"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise28"
 )
 
 func RunExercisesBasics() {
@@ -141,20 +141,24 @@ func RunExercisesBasics() {
 
 	// exercise25.RunExercise25()
 
-	fmt.Println("exercise 26:	Calculate the sum of elements in an array.")
+	// fmt.Println("exercise 26:	Calculate the sum of elements in an array.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise26.RunExercise26()
+
+	// fmt.Println("exercise 27:	Check if an array is sorted in ascending order.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise27.RunExercise27()
+
+	fmt.Println("exercise 28:	Count the occurrences of an element in an array.")
 	time.Sleep(1 * time.Second)
 
-	exercise26.RunExercise26()
+	exercise28.RunExercise28()
 }
 
 // package exercise15
 
-// import "fmt"
-
 // func RunExercise15() {
-// 	var str string
-
-// 	fmt.Println("")
-// 	fmt.Scanln(&)
 
 // }
