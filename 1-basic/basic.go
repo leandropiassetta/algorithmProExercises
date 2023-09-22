@@ -4,8 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise30"
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise31"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise32"
 )
 
 func RunExercisesBasics() {
@@ -162,15 +161,25 @@ func RunExercisesBasics() {
 
 	// exercise29.RunExercise29()
 
-	fmt.Println("exercise 30: Remove duplicates from an array.")
+	// fmt.Println("exercise 30: Remove duplicates from an array.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise30.RunExercise30()
+
+	// fmt.Println("exercise 31:	Calculate the perimeter of a rectangle.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise31.RunExercise31()
+
+	fmt.Println("exercise 32:Calculate the perimeter of a circle.")
 	time.Sleep(1 * time.Second)
 
-	exercise30.RunExercise30()
+	exercise32.RunExercise32()
 
-	fmt.Println("exercise 31:	Calculate the perimeter of a rectangle.")
+	fmt.Println("exercise 33:Check if a string contains a specific substring.")
 	time.Sleep(1 * time.Second)
 
-	exercise31.RunExercise31()
+	exercise32.RunExercise33()
 }
 
 // package exercise15
