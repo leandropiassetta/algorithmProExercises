@@ -3,8 +3,6 @@ package basic
 import (
 	"fmt"
 	"time"
-
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise34"
 )
 
 func RunExercisesBasics() {
@@ -206,10 +204,22 @@ func RunExercisesBasics() {
 	// exercise33.RunExercise33()
 	// time.Sleep(1 * time.Second)
 
-	fmt.Println("exercise 34:Convert a string to uppercase.")
+	// fmt.Println("exercise 34:Convert a string to uppercase.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise34.RunExercise34()
+	// time.Sleep(1 * time.Second)
+
+	// fmt.Println("exercise 35:Convert a string to lowercase.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise35.RunExercise35()
+	// time.Sleep(1 * time.Second)
+
+	fmt.Println("exercise 36:Count the number of vowels in a string")
 	time.Sleep(1 * time.Second)
 
-	exercise34.RunExercise34()
+	exercise36.RunExercise36()
 	time.Sleep(1 * time.Second)
 }
 
