@@ -1,14 +1,7 @@
 package basic
 
-import (
-	"fmt"
-	"time"
-
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise40"
-)
-
 func RunExercisesBasics() {
-	// // fmt.Println("exercise 1: Print " + "Hello, World!" + "to the console")
+	// fmt.Println("exercise 1: Print " + "Hello, World!" + "to the console")
 	// time.Sleep(1 * time.Second)
 
 	// exercise1.RunExercise1()
@@ -242,11 +235,17 @@ func RunExercisesBasics() {
 	// exercise39.RunExercise39()
 	// time.Sleep(1 * time.Second)
 
-	fmt.Println("exercise 40:Check if a string ends with a specific character.")
-	time.Sleep(1 * time.Second)
+	// fmt.Println("exercise 40:Check if a string ends with a specific character.")
+	// time.Sleep(1 * time.Second)
 
-	exercise40.RunExercise40()
-	time.Sleep(1 * time.Second)
+	// exercise40.RunExercise40()
+	// time.Sleep(1 * time.Second)
+
+	// fmt.Println("exercise 41:Calculate the sum of the digits of a number.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise41.RunExercise41()
+	// time.Sleep(1 * time.Second)
 }
 
 // package exercise15
