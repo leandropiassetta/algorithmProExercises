@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise36"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise37"
 )
 
 func RunExercisesBasics() {
@@ -218,10 +218,16 @@ func RunExercisesBasics() {
 	// exercise35.RunExercise35()
 	// time.Sleep(1 * time.Second)
 
-	fmt.Println("exercise 36:Count the number of vowels in a string")
+	// fmt.Println("exercise 36:Count the number of vowels in a string.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise36.RunExercise36()
+	// time.Sleep(1 * time.Second)
+
+	fmt.Println("exercise 37:Count the number of consonants in a string.")
 	time.Sleep(1 * time.Second)
 
-	exercise36.RunExercise36()
+	exercise37.RunExercise37()
 	time.Sleep(1 * time.Second)
 }
 
