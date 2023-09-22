@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise30"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise31"
 )
 
 func RunExercisesBasics() {
@@ -161,10 +162,15 @@ func RunExercisesBasics() {
 
 	// exercise29.RunExercise29()
 
-	fmt.Println("exercise 30:		Remove duplicates from an array.")
+	fmt.Println("exercise 30: Remove duplicates from an array.")
 	time.Sleep(1 * time.Second)
 
 	exercise30.RunExercise30()
+
+	fmt.Println("exercise 31:	Calculate the perimeter of a rectangle.")
+	time.Sleep(1 * time.Second)
+
+	exercise31.RunExercise31()
 }
 
 // package exercise15
