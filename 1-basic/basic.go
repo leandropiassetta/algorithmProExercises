@@ -3,6 +3,8 @@ package basic
 import (
 	"fmt"
 	"time"
+
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise36"
 )
 
 func RunExercisesBasics() {
