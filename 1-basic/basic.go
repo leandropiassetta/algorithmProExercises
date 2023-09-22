@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise33"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise34"
 )
 
 func RunExercisesBasics() {
@@ -200,10 +200,16 @@ func RunExercisesBasics() {
 	// exercise32.RunExercise32()
 	// time.Sleep(1 * time.Second)
 
-	fmt.Println("exercise 33:Check if a string contains a specific substring.")
+	// fmt.Println("exercise 33:Check if a string contains a specific substring.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise33.RunExercise33()
+	// time.Sleep(1 * time.Second)
+
+	fmt.Println("exercise 34:Convert a string to uppercase.")
 	time.Sleep(1 * time.Second)
 
-	exercise33.RunExercise33()
+	exercise34.RunExercise34()
 	time.Sleep(1 * time.Second)
 }
 
