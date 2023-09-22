@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise38"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise39"
 )
 
 func RunExercisesBasics() {
@@ -230,10 +230,16 @@ func RunExercisesBasics() {
 	// exercise37.RunExercise37()
 	// time.Sleep(1 * time.Second)
 
-	fmt.Println("exercise 38:Calculate the length of a string.")
+	// fmt.Println("exercise 38:Calculate the length of a string.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise38.RunExercise38()
+	// time.Sleep(1 * time.Second)
+
+	fmt.Println("exercise 39:Check if a string starts with a specific character.")
 	time.Sleep(1 * time.Second)
 
-	exercise38.RunExercise38()
+	exercise39.RunExercise39()
 	time.Sleep(1 * time.Second)
 }
 
