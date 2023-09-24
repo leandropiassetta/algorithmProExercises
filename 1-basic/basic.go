@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise45"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise46"
 )
 
 func RunExercisesBasics() {
@@ -272,10 +272,17 @@ func RunExercisesBasics() {
 	// exercise44.RunExercise44()
 	// time.Sleep(1 * time.Second)
 
-	fmt.Println("exercise 45:	Calculate the factorial of a number using recursion.")
+	// fmt.Println("exercise 45:	Calculate the factorial of a number using recursion.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise45.RunExercise45()
+	// time.Sleep(1 * time.Second)
+
+
+	fmt.Println("exercise 46:	Calculate the exponent of a number using a loop.")
 	time.Sleep(1 * time.Second)
 
-	exercise45.RunExercise45()
+	exercise46.RunExercise46()
 	time.Sleep(1 * time.Second)
 }
 
