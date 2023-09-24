@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise42"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise43"
 )
 
 func RunExercisesBasics() {
@@ -254,10 +254,16 @@ func RunExercisesBasics() {
 	// exercise41.RunExercise41()
 	// time.Sleep(1 * time.Second)
 
-	fmt.Println("exercise 42:	Check if a number is a perfect square.")
+	// fmt.Println("exercise 42:	Check if a number is a perfect square.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise42.RunExercise42()
+	// time.Sleep(1 * time.Second)
+
+	fmt.Println("exercise 43:		Generate a random number within a range.")
 	time.Sleep(1 * time.Second)
 
-	exercise42.RunExercise42()
+	exercise43.RunExercise43()
 	time.Sleep(1 * time.Second)
 }
 
