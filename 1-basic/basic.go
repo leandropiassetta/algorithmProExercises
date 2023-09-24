@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise41"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise42"
 )
 
 func RunExercisesBasics() {
@@ -248,10 +248,16 @@ func RunExercisesBasics() {
 	// exercise40.RunExercise40()
 	// time.Sleep(1 * time.Second)
 
-	fmt.Println("exercise 41:Calculate the sum of the digits of a number.")
+	// fmt.Println("exercise 41:Calculate the sum of the digits of a number.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise41.RunExercise41()
+	// time.Sleep(1 * time.Second)
+
+	fmt.Println("exercise 42:	Check if a number is a perfect square.")
 	time.Sleep(1 * time.Second)
 
-	exercise41.RunExercise41()
+	exercise42.RunExercise42()
 	time.Sleep(1 * time.Second)
 }
 
