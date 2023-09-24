@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise44"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise45"
 )
 
 func RunExercisesBasics() {
@@ -260,16 +260,22 @@ func RunExercisesBasics() {
 	// exercise42.RunExercise42()
 	// time.Sleep(1 * time.Second)
 
-	// fmt.Println("exercise 43:		Generate a random number within a range.")
+	// fmt.Println("exercise 43:	Generate a random number within a range.")
 	// time.Sleep(1 * time.Second)
 
 	// exercise43.RunExercise43()
 	// time.Sleep(1 * time.Second)
 
-	fmt.Println("exercise 44:		Generate a random number within a range.")
+	// fmt.Println("exercise 44: Generate a random number within a range.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise44.RunExercise44()
+	// time.Sleep(1 * time.Second)
+
+	fmt.Println("exercise 45:	Calculate the factorial of a number using recursion.")
 	time.Sleep(1 * time.Second)
 
-	exercise44.RunExercise44()
+	exercise45.RunExercise45()
 	time.Sleep(1 * time.Second)
 }
 
