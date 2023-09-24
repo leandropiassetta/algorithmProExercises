@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise43"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise44"
 )
 
 func RunExercisesBasics() {
@@ -260,10 +260,16 @@ func RunExercisesBasics() {
 	// exercise42.RunExercise42()
 	// time.Sleep(1 * time.Second)
 
-	fmt.Println("exercise 43:		Generate a random number within a range.")
+	// fmt.Println("exercise 43:		Generate a random number within a range.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise43.RunExercise43()
+	// time.Sleep(1 * time.Second)
+
+	fmt.Println("exercise 44:		Generate a random number within a range.")
 	time.Sleep(1 * time.Second)
 
-	exercise43.RunExercise43()
+	exercise44.RunExercise44()
 	time.Sleep(1 * time.Second)
 }
 
