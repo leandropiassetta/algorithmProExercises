@@ -54,8 +54,8 @@ This section contains exercises suitable for beginners who are looking to build 
 44. Check if a number is a power of 2.
 45. Calculate the factorial of a number using recursion.
 46. Calculate the exponent of a number using a loop.
-47. Find the largest among three numbers.
-48. Find the smallest among three numbers.
+47. Find the next Fibonacci number after a given value.
+48. Check if a number is a Narcissistic number.
 49. Calculate the area of a circle.
 50. Calculate the area of a rectangle.
 
