@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise47"
+	"github.com/leandropiassetta/algorithmProExercises/1-basic/exercise48"
 )
 
 func RunExercisesBasics() {
@@ -284,16 +284,28 @@ func RunExercisesBasics() {
 	// exercise46.RunExercise46()
 	// time.Sleep(1 * time.Second)
 
-	fmt.Println("\n[exercise 47] Find the largest among three numbers.")
-	time.Sleep(1 * time.Second)
-
-	exercise47.RunExercise47()
-	time.Sleep(1 * time.Second)
-
-	// fmt.Println("\n[exercise 48] Check if a number is a Narcissistic number.")
+	// fmt.Println("\n[exercise 47] Find the largest among three numbers.")
 	// time.Sleep(1 * time.Second)
 
-	// exercise48.RunExercise48()
+	// exercise47.RunExercise47()
+	// time.Sleep(1 * time.Second)
+
+	fmt.Println("\n[exercise 48] Check if a number is a Narcissistic number.")
+	time.Sleep(1 * time.Second)
+
+	exercise48.RunExercise48()
+	time.Sleep(1 * time.Second)
+
+	// fmt.Println("\n[exercise 49] Check if a number is a Narcissistic number.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise49.RunExercise49()
+	// time.Sleep(1 * time.Second)
+
+	// fmt.Println("\n[exercise 50] Check if a number is a Narcissistic number.")
+	// time.Sleep(1 * time.Second)
+
+	// exercise50.RunExercise50()
 	// time.Sleep(1 * time.Second)
 }
 
