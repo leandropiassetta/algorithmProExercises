@@ -3,7 +3,6 @@ package exercise22
 import (
 	"fmt"
 	"strconv"
-	"strings"
 )
 
 func RunExercise22() {
@@ -17,11 +16,11 @@ func RunExercise22() {
 	current := 1
 
 	for i := 1; i <= number; i++ {
-		fibonacciSequence += strconv.Itoa(current) + " ,"
+		fibonacciSequence += strconv.Itoa(current) + ", "
 		next := current + previous
 		previous = current
 		current = next
 	}
 
-	fmt.Printf("The Fibonacci sequence for this term is: %s", strings.TrimSuffix(fibonacciSequence, " ,"))
+	fmt.Printf("The Fibonacci sequence for this term is: %s", fibonacciSequence[:len(fibonacciSequence)-2])
 }
