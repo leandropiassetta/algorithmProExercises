@@ -1,4 +1,4 @@
-package exercise6
+package exercise06
 
 import "fmt"
 
@@ -8,7 +8,7 @@ func convertTemperature(celsius float64) float64 {
 	return fahrenheit
 }
 
-func RunExercise6() {
+func RunExercise06() {
 	var celsiusTemperature float64
 
 	fmt.Print("Enter the current celsius temperature of your city? ")

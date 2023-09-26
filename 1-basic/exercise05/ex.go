@@ -1,8 +1,8 @@
-package exercise5
+package exercise05
 
 import "fmt"
 
-func RunExercise5() {
+func RunExercise05() {
 	var number float64
 
 	fmt.Print("Digit a number: ")

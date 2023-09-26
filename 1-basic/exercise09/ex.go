@@ -1,4 +1,4 @@
-package exercise9
+package exercise09
 
 import (
 	"fmt"
@@ -35,7 +35,7 @@ func calculateAngle(a, b, c float64) float64 {
 	return math.Acos(cosA) * 180 / math.Pi
 }
 
-func RunExercise9() string {
+func RunExercise09() string {
 	var sideLengthA float64
 	var sideLengthB float64
 	var sideLengthC float64

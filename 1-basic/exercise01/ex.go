@@ -1,7 +1,7 @@
-package exercise1
+package exercise01
 
 import "fmt"
 
-func RunExercise1() {
+func RunExercise01() {
 	fmt.Println("Hello, World!")
 }

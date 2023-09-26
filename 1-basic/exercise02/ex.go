@@ -1,8 +1,8 @@
-package exercise2
+package exercise02
 
 import "fmt"
 
-func RunExercise2() {
+func RunExercise02() {
 	var numberA int
 	var numberB int
 

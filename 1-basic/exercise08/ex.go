@@ -1,8 +1,8 @@
-package exercise8
+package exercise08
 
 import "fmt"
 
-func RunExercise8() {
+func RunExercise08() {
 	var number int
 
 	fmt.Print("Enter the 1º number: ")
