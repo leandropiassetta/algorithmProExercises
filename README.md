@@ -57,7 +57,7 @@ This section contains exercises suitable for beginners who are looking to build 
 47. Find the next Fibonacci number after a given value.
 48. Check if a number is a Narcissistic number.
 49. Check if a word is a tautogram.
-50. Calculate the area of a rectangle.
+50. Check if a Year is a World Cup Year.
 
 ## Intermediate Level
 

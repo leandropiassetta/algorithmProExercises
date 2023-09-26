@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/leandropiasseta/algorithmProExercises/1-basic/exercise49"
+	"github.com/leandropiasseta/algorithmProExercises/1-basic/exercise50"
 )
 
 func RunExercisesBasics() {
@@ -296,15 +296,15 @@ func RunExercisesBasics() {
 	// exercise48.RunExercise48()
 	// time.Sleep(1 * time.Second)
 
-	fmt.Println("\n[exercise 49] Check if a word is a tautogram.")
-	time.Sleep(1 * time.Second)
-
-	exercise49.RunExercise49()
-	time.Sleep(1 * time.Second)
-
-	// fmt.Println("\n[exercise 50] Check if a number is a Narcissistic number.")
+	// fmt.Println("\n[exercise 49] Check if a word is a tautogram.")
 	// time.Sleep(1 * time.Second)
 
-	// exercise50.RunExercise50()
+	// exercise49.RunExercise49()
 	// time.Sleep(1 * time.Second)
+
+	fmt.Println("\n[exercise 50] Check if a Year is a World Cup Year.")
+	time.Sleep(1 * time.Second)
+
+	exercise50.RunExercise50()
+	time.Sleep(1 * time.Second)
 }
