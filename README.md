@@ -56,7 +56,7 @@ This section contains exercises suitable for beginners who are looking to build 
 46. Calculate the exponent of a number using a loop.
 47. Find the next Fibonacci number after a given value.
 48. Check if a number is a Narcissistic number.
-49. Calculate the area of a circle.
+49. Check if a word is a tautogram.
 50. Calculate the area of a rectangle.
 
 ## Intermediate Level

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	basic "github.com/leandropiassetta/algorithmProExercises/1-basic"
+	basic "github.com/leandropiasseta/algorithmProExercises/1-basic"
 )
 
 func main() {
