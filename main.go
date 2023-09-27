@@ -3,11 +3,15 @@ package main
 import (
 	"fmt"
 
-	basic "github.com/leandropiasseta/algorithmProExercises/1-basic"
+	intermediate "github.com/leandropiasseta/algorithmProExercises/2-intermediate"
 )
 
 func main() {
-	fmt.Println("Basic Exercises Section")
+	// fmt.Println("Basic Exercises Section")
 
-	basic.RunExercisesBasics()
+	// basic.RunExercisesBasics()
+
+	fmt.Println("Intermediate Exercises Section")
+
+	intermediate.RunExercisesIntermediate()
 }
