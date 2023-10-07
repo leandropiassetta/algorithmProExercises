@@ -12,7 +12,7 @@ type Queue struct {
 // create a new queue
 func NewQueue() *Queue {
 	return &Queue{
-		Elements: []interface{}{},
+		Elements: make([]interface{}, 0, 10),
 	}
 }
 
@@ -20,6 +20,11 @@ func NewQueue() *Queue {
 
 // insert an element in the last position of the queue
 func (queue *Queue) Insert(element interface{}) {
+	if queue.IsFull() {
+		fmt.Println("Queue is full, don't possible insert new element")
+		return
+	}
+
 	queue.Elements = append(queue.Elements, element)
 }
 
@@ -36,12 +41,13 @@ func (queue *Queue) Remove() (interface{}, error) {
 }
 
 // return an element of the queue without remove him, if the queue is empty return nil
-func (queue *Queue) Peek() (interface{}, error) {
+func (queue *Queue) Peek() interface{} {
 	if queue.IsEmpty() {
-		return nil, errors.New("Queue is empty")
+		fmt.Println("Queue is empty")
+		return nil
 	}
 
-	return queue.Elements[0], nil
+	return queue.Elements[0]
 }
 
 // return true if the queue is empty
@@ -168,9 +174,24 @@ func RunExercise02() {
 	fmt.Println("Queue of strings remove:")
 	fmt.Println(queueStr.Remove())
 
-	fmt.Println("Queue of integers clear:")
-	queueInt.Clear()
+	fmt.Println("Queue of integers to array:")
+	fmt.Println(queueInt.ToArray())
 
-	fmt.Println("Queue of strings clear:")
+	fmt.Println("Queue of strings to array:")
+	fmt.Println(queueStr.ToArray())
+
+	fmt.Println("Queue of integers cap:")
+	fmt.Println(queueInt.Cap())
+
+	fmt.Println("Queue of strings cap:")
+	fmt.Println(queueStr.Cap())
+
+	queueInt.Clear()
+	fmt.Printf("Queue of integers clear: %v\n", queueInt.Elements)
+
 	queueStr.Clear()
+	fmt.Printf("Queue of strings clear: %v\n", queueStr.Elements)
+
+	// don't possible insert new element because the queue is full
+	queueInt.Insert(20)
 }
