@@ -66,55 +66,55 @@ This section features exercises that delve deeper into programming concepts, sui
 ## Exercise List
 
 1. Create a linked list.
-2. Implement a stack or queue.
-3. Create a program to read and write to a file.
-4. Implement binary search algorithm.
-5. Implement a sorting algorithm like Bubble Sort or Quick Sort.
-6. Create a program to find the shortest path in a graph using Dijkstra's algorithm.
-7. Create a program to find all anagrams in a string.
-8. Create a program to solve the Towers of Hanoi problem.
-9. Create a program to implement a pattern matching algorithm, such as the Knuth-Morris-Pratt algorithm.
-10. Create a program to simulate a memory manager.
-11. Create a program to implement a binary search tree.
-12. Create a program to sort a list of numbers using the Merge Sort algorithm.
-13. Create a program to find the most frequent element in a list.
-14. Create a program to solve the knapsack problem using dynamic programming.
-15. Create a program to implement breadth-first search algorithm in a graph.
-16. Create a program to implement depth-first search algorithm in a graph.
-17. Create a program to check if a number is a power of two.
-18. Create a program to find the number of occurrences of a word in a text.
-19. Create a program to calculate the value of π using the Monte Carlo method.
-20. Create a program to implement a stack using two queues.
-21. Implement an algorithm to find the shortest path in a graph using Dijkstra's algorithm.
-22. Implement a linked list in both singly and doubly versions.
-23. Write a program to implement a Stack, Queue, and Deque using a linked list.
-24. Implement a Binary Tree and perform traversal operations (in-order, pre-order, post-order).
-25. Write a program to implement merge and quicksort sorting algorithms.
-26. Implement a binary search tree algorithm.
-27. Write a program to implement the Huffman algorithm for data compression.
-28. Implement the Knapsack algorithm using dynamic programming.
-29. Create a program to implement binary search recursively.
-30. Create a program to implement heap sort.
-31. Write a program to implement the disjoint set data structure.
-32. Create a program to find the contiguous subarray with the maximum sum in an array of numbers.
-33. Write a program to find all possible paths in a maze.
-34. Write a program to implement a sparse matrix.
-35. Create a program to implement the Boyer-Moore search algorithm for strings.
-36. Create a program to calculate the edit distance between two strings.
-37. Create a program to implement Run-length encoding.
-38. Create a program to implement the segment tree.
-39. Write a program to implement a priority queue.
-40. Write a program to implement a deque (double-ended queue).
-41. Write a program to implement a hash table.
-42. Write a program to implement a set.
-43. Write a program to implement a map.
-44. Write a program to implement a multi-dimensional array.
-45. Write a program to implement a graph.
-46. Write a program to implement a heap.
-47. Write a program to implement a circular linked list.
-48. Write a program to implement a doubly linked list.
-
-Feel free to explore these exercises at the intermediate level to further develop your programming skills.
+2. Implement a queue.
+3. Implement a stack.
+4. Create a program to read and write to a file.
+5. Implement binary search algorithm.
+6. Implement a sorting algorithm like Bubble Sort or Quick Sort.
+7. Create a program to find the shortest path in a graph using Dijkstra's algorithm.
+8. Create a program to find all anagrams in a string.
+9. Create a program to solve the Towers of Hanoi problem.
+10. Create a program to implement a pattern matching algorithm, such as the Knuth-Morris-Pratt algorithm.
+11. Create a program to simulate a memory manager.
+12. Create a program to implement a binary search tree.
+13. Create a program to sort a list of numbers using the Merge Sort algorithm.
+14. Create a program to find the most frequent element in a list.
+15. Create a program to solve the knapsack problem using dynamic programming.
+16. Create a program to implement breadth-first search algorithm in a graph.
+17. Create a program to implement depth-first search algorithm in a graph.
+18. Create a program to check if a number is a power of two.
+19. Create a program to find the number of occurrences of a word in a text.
+20. Create a program to calculate the value of π using the Monte Carlo method.
+21. Create a program to implement a stack using two queues.
+22. Implement an algorithm to find the shortest path in a graph using Dijkstra's algorithm.
+23. Implement a linked list in both singly and doubly versions.
+24. Write a program to implement a Stack, Queue, and Deque using a linked list.
+25. Implement a Binary Tree and perform traversal operations (in-order, pre-order, post-order).
+26. Write a program to implement merge and quicksort sorting algorithms.
+27. Implement a binary search tree algorithm.
+28. Write a program to implement the Huffman algorithm for data compression.
+29. Implement the Knapsack algorithm using dynamic programming.
+30. Create a program to implement binary search recursively.
+31. Create a program to implement heap sort.
+32. Write a program to implement the disjoint set data structure.
+33. Create a program to find the contiguous subarray with the maximum sum in an array of numbers.
+34. Write a program to find all possible paths in a maze.
+35. Write a program to implement a sparse matrix.
+36. Create a program to implement the Boyer-Moore search algorithm for strings.
+37. Create a program to calculate the edit distance between two strings.
+38. Create a program to implement Run-length encoding.
+39. Create a program to implement the segment tree.
+40. Write a program to implement a priority queue.
+41. Write a program to implement a deque (double-ended queue).
+42. Write a program to implement a hash table.
+43. Write a program to implement a set.
+44. Write a program to implement a map.
+45. Write a program to implement a multi-dimensional array.
+46. Write a program to implement a graph.
+47. Write a program to implement a heap.
+48. Write a program to implement a circular linked list.
+49. Write a program to implement a doubly linked list.
+50. Implement a Trie data structure for efficient storage and retrieval of strings with linear time complexity for search, insertion, and deletion.
 
 ## Advanced Level
 
